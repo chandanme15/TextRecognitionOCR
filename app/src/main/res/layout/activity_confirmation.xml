@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.textrecognition.activities.ConfirmationActivity">
+
+    <TextView
+        android:id="@+id/No"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="130dp"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:text="Scanned Text:" />
+    <TextView
+        android:id="@+id/vehicleNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/No"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="" />
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/vehicleNo"
+        android:backgroundTint="@color/colorPrimary"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:text="Proceed" />
+    <!-- <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:gravity="center_horizontal"
+         android:layout_marginBottom="70dp"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:id="@+id/buttonlayout"
+         android:orientation="vertical">
+
+     </LinearLayout>-->
+
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>-->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="18dp"
+        android:text="Enter the Vehicle no. manually/Scan Again?"
+        android:textColor="#000"
+        android:layout_marginBottom="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation= "horizontal"
+        android:id="@+id/layout"
+        android:gravity="center"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp">
+        <Button
+            android:id="@+id/btn_manual_input"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textAllCaps="false"
+            android:textSize="15dp"
+            android:text="Text Vehicle No." />
+
+        <Button
+            android:id="@+id/btn_scan_again"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:textAllCaps="false"
+            android:textSize="15dp"
+            android:text="Scan Again?" />
+    </LinearLayout>
+
+
+
+
+    <!--<Button
+        android:id="@+id/btn_manual_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textAllCaps="false"
+        android:text="Text Vehicle No." />-->
+</RelativeLayout>

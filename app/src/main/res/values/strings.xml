@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Text Recognition</string>
+    <string name="select_image_for_text_recognition">Select image for text recognition</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+</resources>
